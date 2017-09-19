@@ -29,6 +29,6 @@
 
         <Button Name="btnToevoegen" Grid.Row="0" Grid.Column="2" Content="Toevoegen" VerticalAlignment="Center" Height="20" Margin="5" Click="btnToevoegen_Click"></Button>
 
-        <TextBox Name="txtOutput" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="5"></TextBox>
+        <TextBox Name="txtOutput" FontFamily="Courier New" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="5"></TextBox>
     </Grid>
 </Window>
