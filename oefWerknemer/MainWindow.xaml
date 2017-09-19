@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="_Achternaam:" Grid.Row="0" Grid.Column="0" Target="{Binding ElementName=txtAchternaam}" VerticalAlignment="Center" Height="26" Margin="5"></Label>
+        <Label Content="_Voonaam:" Grid.Row="1" Grid.Column="0" Target="{Binding ElementName=txtVoornaam}" VerticalAlignment="Center" Height="26" Margin="5"/>
+        <Label Content="_Verdiensten:" Grid.Row="2" Grid.Column="0" Target="{Binding ElementName=txtVerdiensten}" VerticalAlignment="Center" Height="26" Margin="5"></Label>
+
+        <TextBox Name="txtAchternaam" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Height="18" Margin="5"></TextBox>
+        <TextBox Name="txtVoornaam" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Height="18" Margin="5"></TextBox>
+        <TextBox Name="txtVerdiensten" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Height="18" Margin="5"></TextBox>
+
+        <Button Name="btnToevoegen" Grid.Row="0" Grid.Column="2" Content="Toevoegen" VerticalAlignment="Center" Height="20" Margin="5" Click="btnToevoegen_Click"></Button>
+
+        <TextBox Name="txtOutput" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="5"></TextBox>
     </Grid>
 </Window>

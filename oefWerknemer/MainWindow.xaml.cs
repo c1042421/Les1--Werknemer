@@ -24,5 +24,10 @@ namespace oefWerknemer
         {
             InitializeComponent();
         }
+
+        private void btnToevoegen_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
