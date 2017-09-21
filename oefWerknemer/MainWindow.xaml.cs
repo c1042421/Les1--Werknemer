@@ -33,7 +33,8 @@ namespace oefWerknemer
 
             if (double.TryParse(txtVerdiensten.Text, out verdiensten) && voornaam.Length != 0 && achternaam.Length != 0)
             {
-                txtOutput.Text += string.Format("{0} {1} {2} €\n", achternaam.PadRight(20), voornaam.PadRight(20), verdiensten.ToString().PadLeft(20));
+                Werknemer werknemer = new Werknemer(achternaam, voornaam, verdiensten);
+                txtOutput.Text += werknemer.VolledigeWeergave;
             } else
             {
                 if (achternaam.Length == 0)
